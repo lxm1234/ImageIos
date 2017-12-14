@@ -38,7 +38,7 @@
     NSString* mediaType = (__bridge NSString*)kUTTypeImage;
     controller.mediaTypes = [[NSArray alloc] initWithObjects:mediaType, nil];
     controller.delegate = self;
-    [self.navigationController presentViewController:controller animated:false completion:nil];
+    [self.navigationController presentViewController:controller animated:true completion:nil];
 }
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
